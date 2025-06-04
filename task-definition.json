@@ -1,0 +1,24 @@
+{
+    "family": "flask-ecs-task",
+    "networkMode": "awsvpc",
+    "executionRoleArn": "arn:aws:iam::717279725561:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+      {
+        "name": "flask-container",
+        "image": "IMAGE_URI",
+        "portMappings": [
+          {
+            "containerPort": 5000,
+            "protocol": "tcp"
+          }
+        ],
+        "essential": true
+      }
+    ],
+    "requiresCompatibilities": [
+      "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512"
+  }
+  
