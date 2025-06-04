@@ -96,7 +96,7 @@ def calculator():
     </head>
     <body>
         <div class="calculator-container">
-            <h1>Basit Hesap Makinesi</h1>
+            <h1> Hesap Makinesi</h1>
             <form method="post">
                 <div class="form-group">
                     <input type="text" name="num1" placeholder="Birinci sayı" required>
